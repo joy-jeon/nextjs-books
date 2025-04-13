@@ -9,7 +9,6 @@ export const metadata: Metadata = {
 export default function Tomato() {
   return (
     <>
-      <Header />
       <h1>Page 입니다</h1>
     </>
   );

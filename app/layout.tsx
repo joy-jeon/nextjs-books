@@ -3,6 +3,8 @@ import "../styles/global.css";
 import "../styles/theme.css";
 import { Ropa_Sans } from "next/font/google";
 import { Metadata } from "next";
+import Footer from "../components/footer/footer";
+import Header from "../components/header/header";
 
 const ropaSans = Ropa_Sans({
   subsets: ["latin"],
@@ -25,7 +27,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="light">
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

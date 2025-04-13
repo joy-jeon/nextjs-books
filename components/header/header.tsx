@@ -3,12 +3,14 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import style from "./header.module.css";
+import ThemeBtn from "./theme-btn";
 
 export default function Header() {
   const path = usePathname();
   console.log(path);
   return (
-    <header className="header">
+    <header className={style.header}>
       <nav>
         <ul>
           <li>
@@ -21,6 +23,7 @@ export default function Header() {
           </li>
         </ul>
       </nav>
+      {/* <ThemeBtn /> */}
     </header>
   );
 }

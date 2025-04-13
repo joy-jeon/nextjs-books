@@ -1,21 +1,23 @@
 html.light {
     color-scheme: light;
-    --bg: #121212;
-    --text-primary: #fff; 
-    ::selection {
-        background-color: #0263d1;
-        color: #fff;
-    }
+    --bg: #fff;
+    --primary: #171717;
+    --secondary: #212121;
+    --tertiary: #666;
+    --border: #eaeaea;
 }
 
 html.dark {
     color-scheme: dark;
-    --bg: #fff;
-    --text-primary: #212121;
-    --text-secondary: #6e6e6e;
+    --bg: #121212;
+    --primary: #ededed;
+    --secondary: #878787;
+    --tertiary: #292929;
+    --border: #333;
+
 }
 
 body {
     background-color: var(--bg);
-    color: var(--text-primary);
+    color: var(--primary);
 }
