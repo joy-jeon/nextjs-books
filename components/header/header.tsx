@@ -15,11 +15,11 @@ export default function Header() {
         <ul>
           <li>
             <Link href="/">Home</Link>
-            {path === "/" ? "*" : ""}
+            {path === "/" ? <i></i> : ""}
           </li>
           <li>
             <Link href="/about">About</Link>
-            {path === "/about" ? "*" : ""}
+            {path === "/about" ? <i></i> : ""}
           </li>
         </ul>
       </nav>
