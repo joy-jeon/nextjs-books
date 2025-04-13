@@ -57,6 +57,9 @@ table {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family:
         "Ropa Sans",
         system-ui,
@@ -70,8 +73,6 @@ body {
         "Open Sans",
         "Helvetica Neue",
         sans-serif;
-    background-color: black;
-    color: #fafafa;
     font-size: 16px;
 }
 
@@ -81,7 +82,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 button {
     border: none;
