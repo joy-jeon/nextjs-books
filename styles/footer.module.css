@@ -1,0 +1,12 @@
+.footer {
+    display: flex;
+    border: 1px solid var(--border);
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    & p {
+        color: var(--tertiary);
+        font-size: 14px;
+        opacity: 0.5;
+    }
+}

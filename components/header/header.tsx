@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import style from "./header.module.css";
+import style from "../../styles/header.module.css";
 import ThemeBtn from "./theme-btn";
 
 export default function Header() {
@@ -11,15 +11,15 @@ export default function Header() {
   console.log(path);
   return (
     <header className={style.header}>
-      <nav>
+      <nav className={style.headerNav}>
         <ul>
           <li>
             <Link href="/">Home</Link>
-            {path === "/" ? <i></i> : ""}
+            {(path === "/" || path.startsWith("/list")) && <i></i>}
           </li>
           <li>
             <Link href="/about">About</Link>
-            {path === "/about" ? <i></i> : ""}
+            {path === "/about" && <i></i>}
           </li>
         </ul>
       </nav>

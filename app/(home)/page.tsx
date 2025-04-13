@@ -1,6 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
-import style from "./home.module.css";
+import style from "../../styles/home.module.css";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -19,7 +19,7 @@ export default async function HomePage() {
   lists = await getLists();
 
   return (
-    <main className={style.home}>
+    <div className={style.home}>
       <h2>The New York Times Best Seller Explorer</h2>
       <ul>
         {lists.map((list) => (
@@ -30,6 +30,6 @@ export default async function HomePage() {
           </li>
         ))}
       </ul>
-    </main>
+    </div>
   );
 }

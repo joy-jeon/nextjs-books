@@ -1,0 +1,33 @@
+.header {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    padding: 0 24px;
+    border: 1px solid var(--border);
+    background-color: var(--bg);
+}
+.headerNav {
+        display: flex;
+    & ul {
+        display: flex;
+        gap: 20px;
+        width: 100%;
+    }
+    & li {
+        position: relative;
+        font-size: 18px;
+
+        & i {
+            position: absolute;
+            background-color: red;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            bottom: 0;
+        }
+    }
+}
