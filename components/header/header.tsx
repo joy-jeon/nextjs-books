@@ -23,7 +23,7 @@ export default function Header() {
           </li>
         </ul>
       </nav>
-      {/* <ThemeBtn /> */}
+      <ThemeBtn />
     </header>
   );
 }
